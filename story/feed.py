@@ -9,3 +9,4 @@ def extract(request):
         title=post.title
         link=post.link
         url=post.url
+        title
