@@ -8,3 +8,4 @@ def extract(request):
     for post in d.entries:
         title=post.title
         link=post.link
+        url=post.url
