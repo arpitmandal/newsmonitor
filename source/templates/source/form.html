@@ -1,0 +1,19 @@
+<html>
+<title>Enter Source | Source</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'source/style.css' %}">
+<body>
+{% block content %}
+<a href="http://localhost:8000" style="font-size: 22px;">Home</a>
+    <h1>Add New Source</h1>
+    <form method="POST" class="post-form" action="{% url 'source:source_new'%}"><h3>
+        {% csrf_token %}
+        {{ form.as_p }}</h3>
+        <button type="submit">Save</button>
+    </form>
+{% endblock %}
+</body>
+<div>
+<footer> Made with &hearts; by Arpit</footer>
+</div>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<title>Source | Stories</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'source/style.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+<a href="http://localhost:8000" style="font-size: 22px;">Back</a>
+{% if latest_title_list %}
+    <ul>
+    <p><strong><h1>
+    Recent Stories
+    </strong></p></h1>  
+<table>
+  <tr>
+    <th><h2>Story ID</h2></th>
+    <th><h2>Story Title</h2></th> 
+    <th><h2>Published Date</h2></th>
+    <th><h2>Links</h2></th> 
+  </tr>
+  {% for story in latest_title_list %}
+  <tr>
+    <td><h3> {{ story.id }} </h3></td>
+    <td><h3>{{ story.title }}</h3></td> 
+    <td><h4>{{ source.pub_date }}</h4></td> 
+    <td><h3><a href="http://{{ story.url }}">View Full story</h3></a></td>
+  </tr>
+  {% endfor %}
+</table>
+{% else %}
+    <h1><p>No Stories available for this page.</p></h1>
+{% endif %}
+</body>
+<div>
+<footer> Made with &hearts; by Arpit</footer>
+</div>
+</html>

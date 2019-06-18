@@ -1,0 +1,20 @@
+<html>
+<title>Source | Details</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'source/style.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+    <a href="http://localhost:8000" style="font-size: 22px;">Back</a>
+    <a href="{% url 'source:source_del' sources.id %}" style="font-size: 22px; text-align: right">Delete</a>
+<h1>{{ sources.title_text }}</h1>
+<ul>
+    <li><h3>URL : <a href="http://{{ sources.url_text }}">{{ sources.url_text }}</a></h3></li>
+    <li><h3>RSS File: <a href="http://{{ sources.rss_text }}">{{ sources.rss_text }}</a></h3></li>
+    <li><h3>Author by: {{sources.author_text}}</h3></li>
+    <li><h3>Created by: {{sources.created_by}}</h3></li>
+    <li><h3>Created on: {{sources.created_on}}</h3></li>
+</body>
+<div>
+<footer> Made with &hearts; by Arpit</footer>
+</div>
+</html>

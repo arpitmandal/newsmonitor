@@ -1,0 +1,34 @@
+<html>
+<title>Source | Homepage</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'source/style.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+{% if latest_title_list %}
+    <ul>
+    <p><strong><h1>
+    Recent Sources
+    </strong></p></h1>  
+    <h2><a href="{% url 'source:source_new' %}" >Add New Source</a></h2>
+<table>
+  <tr>
+    <th><h2>Title ID</h2></th>
+    <th><h2>URL Title</h2></th> 
+    <th><h2>Show Stories</h2></th> 
+  </tr>
+  {% for title in latest_title_list %}
+  <tr>
+    <td><h3> {{ title.id }} </h3></td>
+    <td><h3><a href="{% url 'source:detail' title.id%}">{{ title.title_text }}</h3></a></td> 
+    <td><h3><a href="{% url 'story:story' title.id%}">View</h3></a></td>
+  </tr>
+  {% endfor %}
+</table>
+{% else %}
+    <h1><p>No Titles are available.</p></h1>
+{% endif %}
+</body>
+<div>
+<footer> Made with &hearts; by Arpit</footer>
+</div>
+</html>
