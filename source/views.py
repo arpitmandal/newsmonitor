@@ -10,7 +10,7 @@ from .forms import SourceForm
 
 class IndexView(generic.ListView):
     """View to the Index Page - Sources Page"""
-    model =  Sources,Story
+    model =  Sources
     template_name = 'source/index.html'
     context_object_name = 'latest_title_list'
     def get_queryset(self):

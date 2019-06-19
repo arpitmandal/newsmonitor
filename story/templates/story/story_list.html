@@ -1,0 +1,21 @@
+<html>
+<title>Source | Stories</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'source/style.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+{% load custom_tags %}
+{% with story=30|story %}
+    <a href="http://localhost:8000" style="font-size: 22px;">Back</a>
+{% for post in story %}
+<h2>TITLE: {{ post.title }}</h2>
+    <ul>
+<li><h3>URL : <a href="http://{{ post.url }}">{{ post.url }}</a></h3></li>
+<li><h3>Published on: {{post.pub_date}}</h3></li>
+{% endfor %}
+{% endwith %}
+</body>
+<div>
+<footer> Made with &hearts; by Arpit</footer>
+</div>
+</html>
