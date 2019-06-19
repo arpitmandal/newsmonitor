@@ -1,9 +1,0 @@
-{% load custom_tags %}
-<h2>News Feed</h2>
-{% with stories=5|story %}
-    <ul>
-        {% for post in story %}
-            <li>{{ post.date|date }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-    </ul>
-{% endwith %}

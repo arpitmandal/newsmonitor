@@ -1,19 +1,18 @@
 <html>
-<title>Source | Stories</title>
+<title>Source | News Feed</title>
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'source/style.css' %}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
 {% load custom_tags %}
-{% with story=150|story %}
+{% with story=600|story %}
     <a href="http://localhost:8000" style="font-size: 22px;">Back</a>
 {% if story %}
-<h1>Latest stories.</h1>
+<h1>Newsfeed | All news in one place</h1>
 {% for post in story %}
-<h2>TITLE: {{ post.title }}</h2>
-<h3>URL : <a href="{{ post.url }}">{{ post.url }}</a></h3>
+<h3>Title : <a href="{{ post.url }}">{{ post.title }}</a></h3>
 <h3>Published on: {{post.pub_date}}</h3>
-<h4>Description: {{post.body_text}}</h4><br><br>
+<br>
 {% endfor %}
 {% else %}
     <h1>Sorry, no Post in this list.</h1>
