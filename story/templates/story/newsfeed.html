@@ -4,10 +4,8 @@
 <link rel="stylesheet" type="text/css" href="{% static 'source/style.css' %}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
-{% load custom_tags %}
-{% with story=600|story %}
-    <a href="http://localhost:8000" style="font-size: 22px;">Back</a>
-{% if story %}
+<a href="http://localhost:8000" style="font-size: 22px;">Back</a>
+{% if story%}
 <h1>Newsfeed | All news in one place</h1>
 {% for post in story %}
 <h3>Title : <a href="{{ post.url }}">{{ post.title }}</a></h3>
@@ -17,7 +15,6 @@
 {% else %}
     <h1>Sorry, no Post in this list.</h1>
 {% endif%}
-{% endwith %}
 </body>
 <div>
 <footer> Made with &hearts; by Arpit</footer>
