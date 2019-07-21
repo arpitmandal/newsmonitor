@@ -1,0 +1,19 @@
+<html>
+<title>User Login | Login</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'source/style.css' %}">
+<body>
+{% block content %}
+<a href="http://localhost:8000" style="font-size: 22px;">Home</a>
+    <h1>Login User</h1>
+    <form method="POST" class="post-form" action="{% url 'accounts:login'%}"><h3>
+        {% csrf_token %}
+        {{ form.as_p }}</h3>
+        <button type="submit">Login</button>
+    </form>
+{% endblock %}
+</body>
+<div>
+<footer> Made with &hearts; by Arpit</footer>
+</div>
+</html>

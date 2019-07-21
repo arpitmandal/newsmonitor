@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'source/style.css' %}">  
+    <title>{% block title %}Landing Page | News Monitor{% endblock %}</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the News Monitor</h1>
+      {% if user.is_authenticated %}
+        <h2><a href="{% url 'accounts:logout' %}">logout</a></h2>
+      {% else %}
+        <h2><a href="{% url 'accounts:login' %}">login</a> / <a href="{% url 'accounts:user_new' %}">signup</a></h2>
+      {% endif %}
+      <hr>
+    </header>
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+  </body>
+</html>

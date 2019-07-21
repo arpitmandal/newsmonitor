@@ -20,6 +20,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'story.apps.StoryConfig',
+    'accounts.apps.AccountsConfig',
     'source.apps.SourceConfig',
     'django.contrib.admin',
     'django.contrib.auth',

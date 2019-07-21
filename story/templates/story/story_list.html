@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
 {% load custom_tags %}
-{% with story=150|story %}
+{% with story=80|story %}
     <a href="http://localhost:8000" style="font-size: 22px;">Back</a>
 {% if story %}
 <h1>Latest stories.</h1>
@@ -16,7 +16,7 @@
 <h4>Description: {{post.body_text}}</h4><br><br>
 {% endfor %}
 {% else %}
-    <h1>Sorry, no Post in this list.</h1>
+    <h1>Sorry, no Post in this Source.</h1>
 {% endif%}
 {% endwith %}
 </body>
