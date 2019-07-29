@@ -9,11 +9,11 @@
   <body>
     <header>
       <h1>Welcome to the News Monitor</h1>
-      {% if user.is_authenticated %}
+     <!----> {% if user.is_authenticated %}
         <h2><a href="{% url 'accounts:logout' %}">logout</a></h2>
-      {% else %}
+     <!----> {% else %}
         <h2><a href="{% url 'accounts:login' %}">login</a> / <a href="{% url 'accounts:user_new' %}">signup</a></h2>
-      {% endif %}
+      <!---->{% endif %}
       <hr>
     </header>
     <main>

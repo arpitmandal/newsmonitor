@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="175d7663-d840-432e-aa04-87d4468967bd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/templates/story/newsfeed.html" beforeDir="false" afterPath="$PROJECT_DIR$/story/templates/story/newsfeed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/templatetags/custom_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/templatetags/custom_tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/story/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +13,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="102">
               <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
@@ -31,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/story/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+            <state relative-caret-position="156">
+              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -66,6 +64,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -87,10 +86,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Django/Jinja2 Template" />
@@ -144,25 +143,19 @@
       <option name="presentableId" value="Default" />
       <updated>1562775651327</updated>
       <workItem from="1562775690323" duration="997000" />
+      <workItem from="1564409445438" duration="308000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="997000" />
+    <option name="totallyTimeSpent" value="1305000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14069591" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1429652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32405892" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
@@ -170,11 +163,17 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32405892" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,7 +182,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/source/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="102">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
@@ -193,8 +192,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/story/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+        <state relative-caret-position="156">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>

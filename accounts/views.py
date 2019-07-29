@@ -32,6 +32,8 @@ def homepage(request):
     #template = loader.get_template('home.html')
     return render(request, 'accounts/home.html')
 
+def logout(request):
+    return render(request,' accounts/')
 
 '''def login(self,request):
     form = LogInForm(request.POST or None)
